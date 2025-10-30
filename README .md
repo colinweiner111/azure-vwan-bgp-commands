@@ -1,6 +1,6 @@
 # Azure VWAN BGP Commands
 
-This short script set helps Azure engineers and network architects quickly **identify BGP and IPsec configuration details** for a **Virtual WAN (VWAN) VPN Gateway**.  
+This short script **identifys BGP and IPsec configuration IP address for** Virtual WAN (VWAN) VPN Gateway**.  
 It’s especially useful when configuring or validating **on-premises VPN devices** (Cisco, Palo Alto, FortiGate, etc.) that connect to Azure VWAN hubs.
 
 The output provides:
