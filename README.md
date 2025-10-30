@@ -80,5 +80,5 @@ This output provides all the IPs required for your on‑premises VPN configurati
 ---
 
 ### 🔒 Notes
-- Works for both Standard and Secured VWAN hubs.  
+- TBD
 
