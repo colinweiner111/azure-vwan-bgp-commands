@@ -80,6 +80,5 @@ This output provides all the IPs required for your on‑premises VPN configurati
 ---
 
 ### 🔒 Notes
-- Double‑check before publishing IP information publicly.  
 - Works for both Standard and Secured VWAN hubs.  
-- JSON output can be versioned or pushed to GitHub for collaboration or automation.
+
