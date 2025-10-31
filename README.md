@@ -29,7 +29,11 @@ This command lists all VPN gateways within your resource group.
 You’ll need the **Name** value (e.g., `sechub1-vpngw`) from this output to use in the next command.
 
 ```bash
-az network vpn-gateway list -g lab-svh-intra -o table
+az network vpn-gateway list --resource-group <ResourceGroupName> -o table
+```
+
+```bash
+az network vpn-gateway list --resource-group lab-svh-intra -o table
 ```
 
 ### 💡 Example Output
@@ -50,7 +54,11 @@ This command write show the BGP ASN, BGP peer IPs, and Public IPs per instance t
 You’ll need the **Name** value (e.g., `sechub1-vpngw`) from this output to use in the next command.
 
 ```bash
-az network vpn-gateway show -g lab-svh-intra -n sechub1-vpngw --query "{AzureASN:bgpSettings.asn, Peers:bgpSettings.bgpPeeringAddresses[].{Instance:ipconfigurationId, PublicIP:tunnelIpAddresses[0], AzureBGP:defaultBgpIpAddresses[0]}}" -o json > sechub1-bgp-summary.json
+az network vpn-gateway show --resource-group <ResourceGroupName> --name <HubName> --query "{AzureASN:bgpSettings.asn, Peers:bgpSettings.bgpPeeringAddresses[].{Instance:ipconfigurationId, PublicIP:tunnelIpAddresses[0], AzureBGP:defaultBgpIpAddresses[0]}}" -o json > sechub1-bgp-summary.json
+```
+
+```bash
+az network vpn-gateway show --resource-group lab-svh-intra -n sechub1-vpngw --query "{AzureASN:bgpSettings.asn, Peers:bgpSettings.bgpPeeringAddresses[].{Instance:ipconfigurationId, PublicIP:tunnelIpAddresses[0], AzureBGP:defaultBgpIpAddresses[0]}}" -o json > sechub1-bgp-summary.json
 ```
 
 After running the command above, the output will be saved as **sechub1-bgp-summary.json**.  
