@@ -46,7 +46,7 @@ From the example above, you can use either **sechub1-vpngw** or **sechub2-vpngw*
 
 ## 📡 Show ASN + BGP + Public IPs (per instance)
 
-This command lists show the BGP ASN, BGP peer IPs, and Public IPs per instance.  
+This command write show the BGP ASN, BGP peer IPs, and Public IPs per instance to a json file.  
 You’ll need the **Name** value (e.g., `sechub1-vpngw`) from this output to use in the next command.
 
 ```bash
